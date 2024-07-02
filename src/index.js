@@ -11,3 +11,6 @@ connectDB()
         console.log(`the server is running on ${process.env.PORT}`);
     })
 })
+.catch((err) =>{
+     console.log(`mongodb connection failed due to ${err}`);
+})
